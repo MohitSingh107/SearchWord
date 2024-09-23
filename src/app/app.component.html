@@ -1,0 +1,28 @@
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <h2 class="text-center mb-4">Text Highlighting Directive</h2>
+
+      <!-- Input field to filter text -->
+      <div class="form-group">
+        <input 
+          type="text" 
+          [(ngModel)]="searchTerm" 
+          class="form-control" 
+          placeholder="Enter text to highlight" 
+        />
+      </div>
+
+      <!-- Text container with the directive -->
+      <div class="highlight-container p-3 mt-3">
+        <p [appHighlightText]="searchTerm">
+          Angular is a platform for building mobile and desktop web applications. Angular empowers developers to build applications with the flexibility to adapt to a wide range of environments and requirements. 
+          <br><br>
+          As the demand for modern, dynamic, and responsive web applications continues to grow, Angular remains a robust solution that leverages components, directives, and services to create a well-structured and scalable codebase. With its comprehensive tooling and seamless integration with the broader ecosystem of web development tools, Angular offers solutions that streamline development and simplify the complexity of building high-performance applications.
+          <br><br>
+          Angular developers can use two-way data binding, dependency injection, and RxJS to handle reactive programming efficiently. Angular's CLI (Command Line Interface) provides powerful automation tools that help with project setup, testing, and building, ensuring developers can focus on writing business logic rather than repetitive setup tasks.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
